@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Person from './Person/Person';
 
 class App extends Component {
   render() {
-    return (
+      return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          Updated on my desktop.
-        </p>
+        <h1>Some people</h1>
+        <p>testing</p>
+        <Person name ="Chris" age="54" />
+        <Person name ="Sheri" age="56">And I'm a massage therapist!</Person>
+        <Person name ="Bill" age="60" />
       </div>
-    );
+      );
+    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null,'testing'));
   }
 }
 
